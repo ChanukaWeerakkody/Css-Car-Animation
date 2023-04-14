@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Case 6</title>
+    <style>
+        #image1 {
+            position: absolute;
+            width: 100vw;
+            height: 100vh;
+            top: 0;
+            left: 0;
+            z-index: 1;
+        }
+
+        #image2 {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            z-index: 2;
+            animation: move-left 6s linear infinite;
+        }
+        #image3 {
+            position: absolute;
+            width: 150vw;
+            bottom: 300px;
+            left: 0;
+            z-index: 2;
+            opacity: 100;
+            animation: move-left 6s linear infinite;
+        }
+        @keyframes move-left {
+            0% {
+                left: 0;
+            }
+            100%{
+                left: -900px;
+            }
+        }
+
+        #image4{
+            position: absolute;
+            width: 500px;
+            height: 200px;
+            z-index: 2;
+            bottom: 190px;
+            left: 500px;
+        }
+        #image5{
+            position: absolute;
+            width: 85px;
+            height: 85px;
+            z-index: 2;
+            bottom: 200px;
+            left: 545px;
+            animation: rotate 2s linear infinite;
+        }
+        #image6{
+            position: absolute;
+            width: 85px;
+            height: 85px;
+            z-index: 2;
+            bottom: 200px;
+            left: 852px;
+            animation: rotate 2s linear infinite;
+        }
+        @keyframes rotate {
+            0% {
+                transform: rotate(0deg);
+            }
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <img src="assests/sky.jpg" alt="Image 1" id="image1">
+    <img src="assests/road.jpg" alt="Image 2" id="image2">
+    <img src="assests/city.png" alt="Image 3" id="image3">
+    <img src="assests/car.png" alt="Image 3" id="image4">
+    <img src="assests/wheel.png" alt="Image 3" id="image5">
+    <img src="assests/wheel.png" alt="Image 3" id="image6">
+</body>
+</html>
